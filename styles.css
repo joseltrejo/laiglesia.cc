@@ -336,7 +336,7 @@ p:first-child { margin-top: 0; }
 /* si la foto no carga, el velo estorba: se apaga y queda el azul */
 .sin-foto .scrim { background: none; }
 .sin-foto { background: var(--azul-hondo); }
-#pastores.sin-foto { background: var(--tinta); }
+
 
 .hero-inner { position: relative; }
 .hero h1 { color: #fff; max-width: 19em; text-shadow: 0 2px 28px rgba(0,0,0,.35); }
@@ -386,6 +386,7 @@ p:first-child { margin-top: 0; }
 .feature-card { max-width: 32rem; }
 
 /* entrada: la foto es vertical y de baja resolucion, va contenida */
+.feature-split { background: var(--tinta); }
 .feature-split .feature-inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
@@ -397,12 +398,21 @@ p:first-child { margin-top: 0; }
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
+  object-position: 50% 28%;
   border-radius: var(--radio);
 }
 .feature-split .retrato { margin: 0; }
+/* variante con la foto a la izquierda */
+.feature-split.foto-izq .feature-inner { grid-template-columns: minmax(0, 22rem) minmax(0, 1fr); }
+
 @media (max-width: 860px) {
-  .feature-split .feature-inner { grid-template-columns: 1fr; }
-  .feature-split .retrato { display: none; }
+  .feature-split .feature-inner,
+  .feature-split.foto-izq .feature-inner { grid-template-columns: 1fr; }
+  .feature-split .retrato {
+    max-width: 17rem;
+    margin-bottom: 1.75rem;
+  }
+  .feature-split.foto-izq .retrato { order: -1; }
 }
 .feature-card h2 { font-size: clamp(1.875rem, 4vw, 2.875rem); color: #fff; }
 .feature-card p { color: #D4DAEC; }
