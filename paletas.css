@@ -1,0 +1,191 @@
+/* ==========================================================================
+   PALETAS ALTERNATIVAS — laiglesia.cc
+
+   Cómo usarlas: en styles.css, reemplaza TODO el bloque :root { ... } que
+   está al principio del archivo por uno de estos cuatro. Nada más cambia.
+   Guarda, sube el archivo, recarga con Ctrl+Shift+R.
+   ========================================================================== */
+
+
+/* ---------------------------------------------------------------------------
+   1 — VERDE BOSQUE
+   Usa el verde del logo, así que sigue siendo de la marca.
+   La más cálida sin caer en el oro; buena con fotos de gente.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --azul:        #4E9E42;   /* enlaces y marcas */
+  --verde:       #7CC46B;
+  --oro:         #4E9E42;   /* botones */
+  --oro-suave:   #9DB08A;
+
+  --azul-hondo:  #14331F;   /* fondos oscuros grandes */
+  --azul-medio:  #1E4A2C;
+  --azul-claro:  #C2D8C5;
+  --azul-tenue:  #9BB89F;
+  --verde-hondo: #2C6B39;
+  --oro-texto:   #2C6B39;   /* acento legible sobre fondo claro */
+  --tinta:       #0A1A10;
+  --tinta-alta:  #14261A;
+  --hueso:       #F3F1E6;
+  --hueso-alto:  #FBFAF2;
+  --hueso-linea: #DDD8C4;
+  --texto:       #14181F;
+  --texto-medio: #3C4454;
+  --texto-suave: #4A5160;
+  --sobre-oro:   #07180C;   /* texto sobre los botones */
+
+  --ancho: 1240px;
+  --radio: 3px;
+  --barra: 2.5rem;
+  --paso-1: clamp(2rem, 4.6vw, 3.25rem);
+  --paso-2: clamp(2.75rem, 8vw, 6.25rem);
+}
+
+
+/* ---------------------------------------------------------------------------
+   2 — GRANATE
+   Vino profundo, botones blancos, sin segundo color.
+   Formal y con historia. Le cuesta con fotos de tonos rojizos.
+   --------------------------------------------------------------------------- */
+/*
+:root {
+  --azul:        #8C3242;
+  --verde:       #A8556A;
+  --oro:         #FFFFFF;
+  --oro-suave:   #C9A6A6;
+
+  --azul-hondo:  #5A1B26;
+  --azul-medio:  #74242F;
+  --azul-claro:  #E2C4C8;
+  --azul-tenue:  #C49CA3;
+  --verde-hondo: #8C3242;
+  --oro-texto:   #8C3242;
+  --tinta:       #2E0C13;
+  --tinta-alta:  #3E141C;
+  --hueso:       #F4EFE9;
+  --hueso-alto:  #FCF8F4;
+  --hueso-linea: #E2D8CE;
+  --texto:       #14181F;
+  --texto-medio: #3C4454;
+  --texto-suave: #4A5160;
+  --sobre-oro:   #3A0F17;
+
+  --ancho: 1240px;
+  --radio: 3px;
+  --barra: 2.5rem;
+  --paso-1: clamp(2rem, 4.6vw, 3.25rem);
+  --paso-2: clamp(2.75rem, 8vw, 6.25rem);
+}
+*/
+
+
+/* ---------------------------------------------------------------------------
+   3 — CARBÓN Y HUESO
+   Sin color propio: la foto pone el color. Un rojo solo para acentos.
+   La que mejor tolera fotos de calidad desigual.
+   --------------------------------------------------------------------------- */
+/*
+:root {
+  --azul:        #B5342A;
+  --verde:       #7A7A72;
+  --oro:         #FFFFFF;
+  --oro-suave:   #A8A49B;
+
+  --azul-hondo:  #1C1C1C;
+  --azul-medio:  #2E2E2E;
+  --azul-claro:  #CFCDC6;
+  --azul-tenue:  #A8A49B;
+  --verde-hondo: #57574F;
+  --oro-texto:   #B5342A;
+  --tinta:       #0E0E0E;
+  --tinta-alta:  #1E1E1E;
+  --hueso:       #F2F0EB;
+  --hueso-alto:  #FBFAF7;
+  --hueso-linea: #DCD8D0;
+  --texto:       #14181F;
+  --texto-medio: #3C4454;
+  --texto-suave: #4A5160;
+  --sobre-oro:   #1C1C1C;
+
+  --ancho: 1240px;
+  --radio: 3px;
+  --barra: 2.5rem;
+  --paso-1: clamp(2rem, 4.6vw, 3.25rem);
+  --paso-2: clamp(2.75rem, 8vw, 6.25rem);
+}
+*/
+
+
+/* ---------------------------------------------------------------------------
+   4 — VERDE PETRÓLEO
+   Un azulado que no se lee como azul. Fresca y moderna;
+   también la que menos se parece a una iglesia.
+   --------------------------------------------------------------------------- */
+/*
+:root {
+  --azul:        #2F8F84;
+  --verde:       #5CBFAE;
+  --oro:         #FFFFFF;
+  --oro-suave:   #8FAFAC;
+
+  --azul-hondo:  #0D3A3C;
+  --azul-medio:  #14504F;
+  --azul-claro:  #BBD6D4;
+  --azul-tenue:  #93B5B3;
+  --verde-hondo: #1F6B63;
+  --oro-texto:   #1F6B63;
+  --tinta:       #071F21;
+  --tinta-alta:  #0F2E30;
+  --hueso:       #F1F0E8;
+  --hueso-alto:  #FAFAF4;
+  --hueso-linea: #DAD9CE;
+  --texto:       #14181F;
+  --texto-medio: #3C4454;
+  --texto-suave: #4A5160;
+  --sobre-oro:   #08272A;
+
+  --ancho: 1240px;
+  --radio: 3px;
+  --barra: 2.5rem;
+  --paso-1: clamp(2rem, 4.6vw, 3.25rem);
+  --paso-2: clamp(2.75rem, 8vw, 6.25rem);
+}
+*/
+
+
+/* ---------------------------------------------------------------------------
+   5 — NEW HOPE HAWAII KAI  (la que está aplicada ahora)
+   Muestreada de newhopehk.org: cian de botones, ámbar de acentos,
+   carbón para las bandas oscuras, gris claro para las claras.
+   --------------------------------------------------------------------------- */
+/*
+:root {
+  --azul:        #00A4CA;
+  --verde:       #FCB131;
+  --oro:         #00A4CA;
+  --oro-suave:   #FCB131;
+
+  --azul-hondo:  #262626;
+  --azul-medio:  #383838;
+  --azul-claro:  #CDD2D6;
+  --azul-tenue:  #9AA0A6;
+  --verde-hondo: #A06B00;
+  --oro-texto:   #0A7690;
+  --tinta:       #1A1A1A;
+  --tinta-alta:  #2C2C2C;
+  --hueso:       #F7F8F9;
+  --hueso-alto:  #FFFFFF;
+  --hueso-linea: #E3E6E9;
+  --texto:       #1C1C1C;
+  --texto-medio: #3A3A3A;
+  --texto-suave: #4A4A4A;
+  --sobre-oro:   #042630;
+
+  --ancho: 1240px;
+  --radio: 3px;
+  --barra: 2.5rem;
+  --paso-1: clamp(2rem, 4.6vw, 3.25rem);
+  --paso-2: clamp(2.75rem, 8vw, 6.25rem);
+}
+*/
