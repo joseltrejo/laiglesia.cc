@@ -624,3 +624,265 @@ p:first-child { margin-top: 0; }
   .hero-bg, .feature-bg, .scrim { display: none; }
   .hero h1, .display, .feature-card h2, .steps h3 { color: #000; }
 }
+
+/* ==========================================================================
+   Paginas interiores
+   ========================================================================== */
+
+.site-header-solid { background: var(--tinta); backdrop-filter: none; }
+
+.page-hero {
+  background: var(--azul-hondo);
+  color: #fff;
+  padding-block: clamp(2.75rem, 6vw, 4.5rem) clamp(2rem, 4vw, 3rem);
+}
+.page-hero h1 { font-size: clamp(2.25rem, 6vw, 4rem); color: #fff; }
+.page-hero .lede {
+  margin-top: 1.125rem;
+  font-size: clamp(1.0625rem, 1.8vw, 1.25rem);
+  color: var(--azul-claro);
+  max-width: 34em;
+}
+
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .625rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.subnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0 1.125rem;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 999px;
+  font-size: .9375rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+.subnav a:hover { border-color: var(--oro); background: rgba(255,255,255,.08); color: #fff; }
+
+/* ------------------------------------------------------------- prosa ----- */
+
+.prose { max-width: 40rem; }
+.prose h3 {
+  margin-top: 2.25rem;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--azul-hondo);
+}
+.prose p { font-size: 1.0625rem; line-height: 1.7; color: var(--texto-medio); }
+.prose-oscuro { max-width: 42rem; }
+.prose-oscuro p { color: #B7C3C0; }
+.prose-oscuro h3 { color: #fff; }
+
+.destacado {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.375rem, 2.6vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--azul-hondo);
+}
+.band-ink .destacado, .band-azul .destacado { color: #fff; }
+
+.nota {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--hueso-linea);
+  font-size: .9375rem;
+  color: var(--texto-suave);
+}
+.nota-clara { border-top-color: rgba(255,255,255,.18); color: var(--azul-claro); }
+.firma { margin-top: 1.75rem; font-weight: 500; color: var(--texto); }
+.sub {
+  margin-top: 3rem;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--azul-hondo);
+}
+
+/* ------------------------------------------------------------ valores ---- */
+
+.valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 2.75rem;
+}
+.valores article { padding-top: 1.25rem; border-top: 2px solid var(--teal); }
+.valores h3 {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--azul-hondo);
+}
+.valores p { margin-top: .625rem; font-size: 1rem; line-height: 1.6; color: var(--texto-suave); }
+
+/* ----------------------------------------------------------- promesas ---- */
+
+.promesas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: promesa;
+}
+.promesas li {
+  padding: 1.75rem;
+  background: var(--hueso);
+  border-radius: var(--radio);
+  counter-increment: promesa;
+}
+.promesas li::before {
+  content: "Promesa " counter(promesa);
+  display: block;
+  margin-bottom: .5rem;
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--oro-texto);
+}
+.promesas h3 {
+  margin: 0;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.35;
+  color: var(--azul-hondo);
+}
+.promesas ul { margin: 1rem 0 0; padding-left: 1.125rem; }
+.promesas li li { padding: 0; background: none; margin-bottom: .5rem; font-size: 1rem; color: var(--texto-suave); }
+.promesas li li::before { content: none; }
+.cita { margin-top: 1rem; font-size: .875rem; color: var(--verde-hondo); }
+
+/* ------------------------------------------------------------ horario ---- */
+
+.horario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  margin-top: 2.75rem;
+}
+.horario article { padding-top: 1rem; border-top: 2px solid var(--hueso-linea); }
+.horario .domingo { border-top-color: var(--oro); }
+.horario h3 {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--azul-hondo);
+}
+.horario ul { margin: .875rem 0 0; padding: 0; list-style: none; }
+.horario li { margin-bottom: .625rem; font-size: 1rem; line-height: 1.5; color: var(--texto-suave); }
+.horario b { color: var(--texto); font-weight: 600; }
+.cuando { display: block; font-size: .875rem; color: var(--oro-texto); }
+
+/* ------------------------------------------------------- listas varias --- */
+
+.cinco { margin: 2rem 0 0; padding-left: 1.25rem; max-width: 40rem; }
+.cinco li { margin-bottom: .875rem; font-size: 1.0625rem; line-height: 1.6; color: var(--texto-suave); }
+.cinco b { color: var(--texto); }
+
+.lista-simple { margin: 1rem 0 0; padding-left: 1.125rem; }
+.lista-simple li { margin-bottom: .5rem; font-size: 1rem; color: var(--texto-suave); }
+
+.lista-recursos { margin: 1.75rem 0 0; padding: 0; list-style: none; max-width: 40rem; }
+.lista-recursos li {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: .875rem 0;
+  border-bottom: 1px solid var(--hueso-linea);
+  font-size: 1.0625rem;
+  color: var(--texto);
+}
+.lista-recursos-anchas { max-width: none; columns: 2; column-gap: 3rem; }
+.lista-recursos-anchas li { break-inside: avoid; }
+@media (max-width: 640px) { .lista-recursos-anchas { columns: 1; } }
+.dur { font-size: .875rem; font-weight: 500; color: var(--oro-texto); min-width: 3.5rem; }
+
+.cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: .75rem 1.5rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.cursos li {
+  padding: .875rem 1.125rem;
+  background: var(--tinta-alta);
+  border-radius: var(--radio);
+  font-size: 1rem;
+  color: #fff;
+}
+
+.extras { margin: 1.25rem 0 0; padding: 0; list-style: none; max-width: 40rem; }
+.extras li {
+  padding: .75rem 0;
+  border-bottom: 1px solid var(--hueso-linea);
+  font-size: 1.0625rem;
+  color: var(--texto-suave);
+}
+.extras b { display: inline-block; min-width: 4rem; color: var(--azul-hondo); font-weight: 600; }
+
+.capacidad { font-weight: 600; color: var(--oro-texto); }
+.card .meta { font-size: .9375rem; color: var(--texto-suave); }
+.panel .meta { font-size: .9375rem; color: var(--azul-claro); }
+
+/* ------------------------------------------------------------- lugares --- */
+
+.lugares {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 2.5rem;
+}
+.lugares h3 {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--azul-hondo);
+  padding-bottom: .625rem;
+  border-bottom: 1px solid var(--hueso-linea);
+}
+.lugares ul { margin: .875rem 0 0; padding: 0; list-style: none; }
+.lugares li { margin-bottom: .5rem; font-size: 1rem; color: var(--texto-suave); }
+
+/* --------------------------------------------------------------- tabla --- */
+
+.tabla-envoltura { margin-top: 1.5rem; overflow-x: auto; }
+.tabla { width: 100%; border-collapse: collapse; font-size: 1rem; min-width: 34rem; }
+.tabla caption {
+  text-align: left;
+  padding-bottom: 1rem;
+  font-size: .9375rem;
+  color: var(--texto-suave);
+}
+.tabla th {
+  text-align: left;
+  padding: .75rem 1rem .75rem 0;
+  border-bottom: 2px solid var(--teal);
+  font-size: .9375rem;
+  font-weight: 600;
+  color: var(--azul-hondo);
+}
+.tabla td {
+  padding: .75rem 1rem .75rem 0;
+  border-bottom: 1px solid var(--hueso-linea);
+  color: var(--texto-suave);
+}
+.tabla td:first-child { color: var(--texto); }
+.tabla .vacante { color: var(--verde-hondo); font-weight: 500; }
