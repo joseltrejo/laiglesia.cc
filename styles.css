@@ -1,32 +1,40 @@
 /* ==========================================================================
    La Iglesia Comunidad Cristiana — laiglesia.cc
-   Paleta tomada de newhopehk.org (New Hope Hawaii Kai):
-     cian #00A4CA   ambar #FCB131   carbon #262626   gris claro #F7F8F9
+
+   Paleta tomada del material grafico de los ministerios de la iglesia
+   (Discipulados, ECFA, ECSEL, Exploradores):
+     verde azulado #4A837D   terracota #CD7B56   ladrillo #AC554C
+     olivo #9BA103           gris #60606A
    ========================================================================== */
 
 :root {
-  /* colores de la paleta */
-  --azul:        #00A4CA;   /* cian: marcas y detalles */
-  --verde:       #FCB131;   /* ambar: lo que esta en proceso */
-  --oro:         #00A4CA;   /* botones */
-  --oro-suave:   #FCB131;
+  /* colores de la iglesia */
+  --teal:        #4A837D;   /* de la grafica de Discipulados */
+  --terracota:   #CD7B56;   /* del trazo de pincel */
+  --ladrillo:    #AC554C;   /* de la grafica de ECFA */
+  --olivo:       #9BA103;   /* de Exploradores de Jesus */
 
-  /* tonos derivados */
-  --azul-hondo:  #262626;   /* carbon: fondos oscuros grandes */
-  --azul-medio:  #383838;   /* tarjetas sobre el carbon */
-  --azul-claro:  #CDD2D6;
-  --azul-tenue:  #9AA0A6;
-  --verde-hondo: #A06B00;   /* ambar legible sobre fondo claro */
-  --oro-texto:   #0A7690;   /* cian legible sobre fondo claro */
-  --tinta:       #1A1A1A;
-  --tinta-alta:  #2C2C2C;
-  --hueso:       #F7F8F9;
-  --hueso-alto:  #FFFFFF;
-  --hueso-linea: #E3E6E9;
-  --texto:       #1C1C1C;
-  --texto-medio: #3A3A3A;
-  --texto-suave: #4A4A4A;
-  --sobre-oro:   #042630;   /* texto sobre los botones de cian */
+  /* nombres que usa el resto del archivo */
+  --azul:        #33635E;   /* enlaces: el verde azulado oscurecido */
+  --verde:       #CD7B56;   /* terracota: lo que esta en proceso */
+  --oro:         #CD7B56;   /* botones */
+  --oro-suave:   #E0A184;
+
+  --azul-hondo:  #234B47;   /* fondos oscuros grandes */
+  --azul-medio:  #2F625C;   /* tarjetas sobre el fondo oscuro */
+  --azul-claro:  #C6D6D3;
+  --azul-tenue:  #94AFAB;
+  --verde-hondo: #A2503F;
+  --oro-texto:   #A2503F;   /* acento legible sobre fondo claro */
+  --tinta:       #17302E;
+  --tinta-alta:  #22423F;
+  --hueso:       #F4F1EA;
+  --hueso-alto:  #FBF9F4;
+  --hueso-linea: #E2DCD0;
+  --texto:       #1B211F;
+  --texto-medio: #3A4340;
+  --texto-suave: #4C5552;
+  --sobre-oro:   #2B1206;   /* texto sobre los botones de terracota */
 
   --ancho: 1240px;
   --radio: 3px;
@@ -135,7 +143,7 @@ p:first-child { margin-top: 0; }
 .btn-lg { min-height: 3.75rem; padding-inline: 2.5rem; font-size: 1.125rem; }
 
 .btn-gold { background: var(--oro); color: var(--sobre-oro); }
-.btn-gold:hover { background: #0090B3; color: var(--sobre-oro); }
+.btn-gold:hover { background: #B96944; color: var(--sobre-oro); }
 
 .btn-ghost { border-color: rgba(255,255,255,.42); color: #fff; }
 .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.1); color: #fff; }
@@ -208,7 +216,7 @@ p:first-child { margin-top: 0; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(12,16,36,.86);
+  background: rgba(20,48,45,.86);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -231,7 +239,7 @@ p:first-child { margin-top: 0; }
   color: var(--hueso);
   text-decoration: none;
 }
-.brand img { width: clamp(104px, 11vw, 138px); height: auto; }
+.brand img { width: clamp(148px, 15vw, 200px); height: auto; }
 
 .nav { display: flex; align-items: center; gap: 2rem; }
 .nav ul { display: flex; align-items: center; gap: 1.875rem; margin: 0; padding: 0; list-style: none; }
@@ -311,18 +319,18 @@ p:first-child { margin-top: 0; }
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(to top, rgba(8,11,26,.92) 0%, rgba(8,11,26,.66) 42%, rgba(8,11,26,.34) 100%),
-    linear-gradient(to right, rgba(12,16,36,.7) 0%, rgba(12,16,36,0) 72%);
+    linear-gradient(to top, rgba(15,40,38,.92) 0%, rgba(15,40,38,.66) 42%, rgba(15,40,38,.34) 100%),
+    linear-gradient(to right, rgba(20,48,45,.7) 0%, rgba(20,48,45,0) 72%);
 }
 .scrim-left {
   background:
-    linear-gradient(to right, rgba(8,11,26,.94) 0%, rgba(8,11,26,.72) 46%, rgba(8,11,26,.22) 100%),
-    linear-gradient(to top, rgba(8,11,26,.5), rgba(8,11,26,.2));
+    linear-gradient(to right, rgba(15,40,38,.94) 0%, rgba(15,40,38,.72) 46%, rgba(15,40,38,.22) 100%),
+    linear-gradient(to top, rgba(15,40,38,.5), rgba(15,40,38,.2));
 }
 .scrim-right {
   background:
-    linear-gradient(to left, rgba(8,11,26,.94) 0%, rgba(8,11,26,.72) 46%, rgba(8,11,26,.22) 100%),
-    linear-gradient(to top, rgba(8,11,26,.5), rgba(8,11,26,.2));
+    linear-gradient(to left, rgba(15,40,38,.94) 0%, rgba(15,40,38,.72) 46%, rgba(15,40,38,.22) 100%),
+    linear-gradient(to top, rgba(15,40,38,.5), rgba(15,40,38,.2));
 }
 
 /* si la foto no carga, el velo estorba: se apaga y queda el azul */
@@ -376,6 +384,26 @@ p:first-child { margin-top: 0; }
 .feature-right .feature-inner { justify-content: flex-end; }
 
 .feature-card { max-width: 32rem; }
+
+/* entrada: la foto es vertical y de baja resolucion, va contenida */
+.feature-split .feature-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  width: 100%;
+}
+.feature-split .retrato img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radio);
+}
+.feature-split .retrato { margin: 0; }
+@media (max-width: 860px) {
+  .feature-split .feature-inner { grid-template-columns: 1fr; }
+  .feature-split .retrato { display: none; }
+}
 .feature-card h2 { font-size: clamp(1.875rem, 4vw, 2.875rem); color: #fff; }
 .feature-card p { color: #D4DAEC; }
 .feature-card .addr {
@@ -403,7 +431,7 @@ p:first-child { margin-top: 0; }
 .band-bone  { background: var(--hueso); }
 .band-white { background: var(--hueso-alto); }
 .band-ink   { background: var(--tinta); color: var(--hueso); }
-.band-azul  { background: #0B4C5C; color: var(--hueso); }
+.band-azul  { background: var(--azul-hondo); color: var(--hueso); }
 
 .cols-2 {
   display: grid;
@@ -432,12 +460,12 @@ p:first-child { margin-top: 0; }
   padding: 0;
   list-style: none;
 }
-.marks li { width: clamp(22px, 2.4vw, 30px); aspect-ratio: 1; border-radius: 50%; background: var(--azul); }
+.marks li { width: clamp(22px, 2.4vw, 30px); aspect-ratio: 1; border-radius: 50%; background: var(--teal); }
 .marks li.pending { background: none; border: 2px solid var(--verde); }
 
 .legend { margin: .25rem 0 0; padding: 0; list-style: none; }
 .legend li { display: flex; align-items: center; gap: .75rem; margin-bottom: .875rem; font-weight: 500; color: var(--texto-medio); }
-.legend .dot { width: 1rem; aspect-ratio: 1; border-radius: 50%; background: var(--azul); flex: none; }
+.legend .dot { width: 1rem; aspect-ratio: 1; border-radius: 50%; background: var(--teal); flex: none; }
 .legend .dot-pending { background: none; border: 2px solid var(--verde-hondo); }
 
 /* ------------------------------------------------------------------ pasos - */
@@ -489,9 +517,9 @@ p:first-child { margin-top: 0; }
   background: var(--hueso-alto);
   border-top: 4px solid var(--azul);
 }
-.card-azul  { border-top-color: var(--azul); }
-.card-verde { border-top-color: var(--verde); }
-.card-oro   { border-top-color: #262626; }
+.card-azul  { border-top-color: var(--teal); }
+.card-verde { border-top-color: var(--olivo); }
+.card-oro   { border-top-color: var(--ladrillo); }
 .card h3 { font-size: clamp(1.5rem, 2.4vw, 1.875rem); color: var(--azul-hondo); }
 .card p { color: var(--texto-suave); }
 .card a { display: inline-block; margin-top: 1.375rem; font-weight: 600; }
