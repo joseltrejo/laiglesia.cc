@@ -62,6 +62,10 @@ body.nav-open { overflow: hidden; }
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* mientras falten las imagenes, el texto alternativo se lee como texto normal */
+a img { text-decoration: none; }
+img:-moz-broken, img:-moz-loading { color: inherit; font-size: .9375rem; }
+
 a { color: var(--azul); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: var(--azul-hondo); }
 
@@ -180,7 +184,16 @@ p:first-child { margin-top: 0; }
   min-height: 5.25rem;
 }
 
-.brand { display: flex; align-items: center; }
+.brand {
+  display: flex;
+  align-items: center;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.375rem, 2.6vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--hueso);
+  text-decoration: none;
+}
 .brand img { width: clamp(112px, 12vw, 150px); height: auto; }
 
 .nav { display: flex; align-items: center; gap: 2rem; }
@@ -379,11 +392,14 @@ p:first-child { margin-top: 0; }
 }
 .steps li::before {
   content: counter(paso);
+  grid-column: 1;
+  grid-row: 1;
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--oro-texto);
 }
+.steps li > * { grid-column: 2; }
 .steps h3 { font-family: "Instrument Sans", sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: 0; }
 .steps p { margin-top: .375rem; color: var(--texto-suave); max-width: 34em; }
 
