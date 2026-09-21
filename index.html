@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://laiglesia.cc/">
 <meta property="og:image" content="https://laiglesia.cc/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#152473">
+<meta name="theme-color" content="#0C1024">
 <link rel="icon" href="img/favicon.png" sizes="any">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +50,24 @@
 
 <a class="skip" href="#contenido">Saltar al contenido</a>
 
+<!-- BARRA SUPERIOR CON CUENTA REGRESIVA -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <p class="countdown">
+      <span class="countdown-label">Próximo servicio</span>
+      <span class="clock" id="clock" aria-live="off">
+        <b data-unit="d">--</b><i>d</i>
+        <b data-unit="h">--</b><i>h</i>
+        <b data-unit="m">--</b><i>m</i>
+        <b data-unit="s">--</b><i>s</i>
+      </span>
+    </p>
+    <a class="topbar-link" href="https://www.youtube.com/c/LaIglesiadeMundelein">
+      <span class="pulse" aria-hidden="true"></span>Ver en vivo
+    </a>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/">
@@ -75,26 +93,20 @@
 
 <main id="contenido">
 
-  <!-- HERO -->
+  <!-- HERO A SANGRE -->
   <section class="hero">
+    <img class="hero-bg" src="img/congregacion.jpg" alt="" width="2000" height="1333" fetchpriority="high">
+    <div class="scrim" aria-hidden="true"></div>
     <div class="wrap hero-inner">
-      <div class="hero-text">
-        <h1>Ser y hacer discípulos que hacen discípulos.</h1>
-        <p class="lede">Una iglesia evangélica en español en Mundelein, con más de 25 años sirviendo a las familias del área. Te esperamos este domingo.</p>
-        <p class="actions">
-          <a class="btn btn-gold" href="#visitanos">Planea tu visita</a>
-          <a class="btn btn-ghost" href="https://www.youtube.com/c/LaIglesiadeMundelein">Ver el servicio en vivo</a>
-        </p>
-        <dl class="facts">
-          <div><dt>Domingos</dt><dd class="big">10:30 am</dd></div>
-          <div><dt>y también</dt><dd class="big">6:00 pm</dd></div>
-          <div><dt>Dónde</dt><dd>342 Townline Rd, Mundelein<br><span class="soft">junto al Salvation Army</span></dd></div>
-        </dl>
-      </div>
-      <figure class="hero-media">
-        <img src="img/congregacion.jpg" alt="La congregación reunida durante el servicio del domingo" width="760" height="1000" loading="eager">
-      </figure>
+      <h1>Ser y hacer discípulos que hacen discípulos.</h1>
+      <p class="hero-sub">Domingos 10:30 am y 6:00 pm en 342 Townline Rd, Mundelein</p>
+      <p class="actions">
+        <a class="btn btn-gold btn-lg" href="#visitanos">Planea tu visita</a>
+      </p>
     </div>
+    <a class="hero-scroll" href="#conocenos" aria-label="Bajar a la siguiente sección">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
   </section>
 
   <!-- MULTIPLICACIÓN -->
@@ -117,60 +129,75 @@
     </div>
   </section>
 
-  <!-- PRIMERA VEZ -->
-  <section id="primera-vez" class="band band-white">
-    <div class="wrap split">
-      <figure class="split-media">
-        <img src="img/entrada.jpg" alt="Entrada del edificio de la iglesia en 342 Townline Rd" width="900" height="620" loading="lazy">
-      </figure>
-      <div>
-        <h2 class="display">¿Es tu primera vez?</h2>
-        <p class="body-lg">No necesitas prepararte para nada. Llega como estás y siéntate donde quieras.</p>
-        <ol class="steps">
-          <li>
-            <h3>Dos servicios, los dos en español</h3>
-            <p>Domingos a las 10:30 am y a las 6:00 pm. Duran alrededor de hora y media.</p>
-          </li>
-          <li>
-            <h3>Tus hijos tienen su lugar</h3>
-            <p>Clases por edad con material propio durante el servicio, con maestros que ya conoces.</p>
-          </li>
-          <li>
-            <h3>Fácil de encontrar, fácil de estacionar</h3>
-            <p>342 Townline Rd, junto al Salvation Army. Estacionamiento gratis en el lote.</p>
-          </li>
-        </ol>
+  <!-- UBICACIÓN A SANGRE -->
+  <section id="visitanos" class="feature">
+    <img class="feature-bg" src="img/entrada.jpg" alt="" width="2000" height="1333" loading="lazy">
+    <div class="scrim scrim-left" aria-hidden="true"></div>
+    <div class="wrap feature-inner">
+      <div class="feature-card">
+        <h2>Una sola casa, en Mundelein</h2>
+        <p class="addr">342 Townline Rd<br>Mundelein, IL 60060</p>
+        <p class="soft">Junto al Salvation Army. Estacionamiento gratis en el lote.</p>
+        <p class="times"><span>10:30 am</span><span>6:00 pm</span></p>
+        <p class="actions">
+          <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=342+Townline+Rd,+Mundelein,+IL+60060">Abrir indicaciones</a>
+          <a class="btn btn-ghost" href="tel:+12244339854">(224) 433-9854</a>
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- PRIMERA VEZ -->
+  <section id="primera-vez" class="band band-ink">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 class="display">¿Es tu primera vez?</h2>
+        <p class="body-lg">No necesitas prepararte para nada. Llega como estás y siéntate donde quieras.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Dos servicios, los dos en español</h3>
+          <p>Domingos a las 10:30 am y a las 6:00 pm. Duran alrededor de hora y media.</p>
+        </li>
+        <li>
+          <h3>Tus hijos tienen su lugar</h3>
+          <p>Clases por edad con material propio durante el servicio, con maestros que ya conoces.</p>
+        </li>
+        <li>
+          <h3>Fácil de encontrar, fácil de estacionar</h3>
+          <p>342 Townline Rd, junto al Salvation Army. Estacionamiento gratis en el lote.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
   <!-- PREDICACIONES -->
-  <section id="predicaciones" class="band band-ink">
-    <div class="wrap split split-narrow">
-      <div>
+  <section id="predicaciones" class="band band-azul">
+    <div class="wrap">
+      <div class="band-head">
         <h2 class="display">Predicaciones cada domingo</h2>
         <p class="body-lg">Si no puedes venir, transmitimos en vivo y todas las predicaciones quedan guardadas para verlas cuando quieras.</p>
-        <p class="actions actions-stack">
-          <a class="btn btn-gold" href="https://www.youtube.com/c/LaIglesiadeMundelein">Ver en YouTube</a>
-          <a class="btn btn-ghost" href="https://www.facebook.com/laiglesiacomunidadcristiana/">Ver en Facebook</a>
-        </p>
       </div>
       <div class="video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed?listType=user_uploads&list=LaIglesiadeMundelein"
+          src="https://www.youtube-nocookie.com/embed?listType=user_uploads&amp;list=LaIglesiadeMundelein"
           title="Última predicación de La Iglesia Comunidad Cristiana"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
       </div>
+      <p class="actions actions-center">
+        <a class="btn btn-gold" href="https://www.youtube.com/c/LaIglesiadeMundelein">Ver en YouTube</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/laiglesiacomunidadcristiana/">Ver en Facebook</a>
+      </p>
     </div>
   </section>
 
   <!-- TRES CAMINOS -->
   <section id="caminos" class="band band-bone">
     <div class="wrap">
-      <h2 class="display">Tres maneras de dar el siguiente paso</h2>
+      <h2 class="display">¿Qué significa seguir a Cristo aquí?</h2>
       <div class="cards">
         <article class="card card-azul">
           <h3>Conéctate</h3>
@@ -191,27 +218,30 @@
     </div>
   </section>
 
-  <!-- PASTORES -->
-  <section id="pastores" class="band band-white">
-    <div class="wrap split split-reverse">
-      <div>
+  <!-- PASTORES A SANGRE -->
+  <section id="pastores" class="feature feature-right">
+    <img class="feature-bg" src="img/pastores.jpg" alt="" width="1600" height="1200" loading="lazy">
+    <div class="scrim scrim-right" aria-hidden="true"></div>
+    <div class="wrap feature-inner">
+      <div class="feature-card">
         <p class="eyebrow">Nuestros pastores</p>
-        <h2 class="display">Homero y Claudia García</h2>
-        <p class="body-lg">Fundadores y pastores de La Iglesia. Originarios de Monterrey, México, conocieron al Señor de jóvenes, se conocieron en un seminario y emigraron a Estados Unidos, donde Homero obtuvo su doctorado en teología sistemática en Trinity Evangelical Divinity School.</p>
-        <p class="body-lg">Al ver la cantidad de hispanos en Mundelein empezaron a hablarles de Cristo y a invitarlos. De ahí nació esta iglesia, hace más de veinticinco años. Llevan más de veintisiete años casados y tienen tres hijos: Kevin, Kristian y Kacey.</p>
-        <p><a href="#conocenos">Nuestra historia completa</a></p>
+        <h2>Homero y Claudia García</h2>
+        <p>Originarios de Monterrey, México, se conocieron en un seminario y emigraron a Estados Unidos, donde Homero obtuvo su doctorado en teología sistemática en Trinity Evangelical Divinity School.</p>
+        <p>Al ver la cantidad de hispanos en Mundelein empezaron a hablarles de Cristo. De ahí nació esta iglesia, hace más de veinticinco años.</p>
+        <p class="actions">
+          <a class="btn btn-ghost" href="#conocenos">Nuestra historia</a>
+        </p>
       </div>
-      <figure class="split-media portrait">
-        <img src="img/pastores.jpg" alt="Los pastores Homero y Claudia García" width="700" height="800" loading="lazy">
-      </figure>
     </div>
   </section>
 
   <!-- DAR -->
-  <section id="dar" class="band band-azul">
+  <section id="dar" class="band band-ink">
     <div class="wrap">
-      <h2 class="display">Cómo puedo dar</h2>
-      <p class="body-lg">Tu ofrenda sostiene el trabajo de la iglesia, el Ropero Comunitario y las iglesias que estamos plantando. Tres maneras de hacerlo:</p>
+      <div class="band-head">
+        <h2 class="display">Cómo puedo dar</h2>
+        <p class="body-lg">Tu ofrenda sostiene el trabajo de la iglesia, el Ropero Comunitario y las iglesias que estamos plantando.</p>
+      </div>
       <div class="cards cards-dark">
         <article class="panel">
           <h3>En línea con Tithe.ly</h3>
@@ -226,15 +256,15 @@
         <article class="panel">
           <h3>Por correo</h3>
           <p>Cheque a nombre de La Iglesia Comunidad Cristiana.</p>
-          <p class="addr">498 Buckingham Dr<br>Grayslake, IL 60030</p>
+          <p class="addr-sm">498 Buckingham Dr<br>Grayslake, IL 60030</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- VISÍTANOS -->
-  <section id="visitanos" class="band band-bone">
-    <div class="wrap split split-narrow">
+  <!-- MAPA -->
+  <section class="band band-bone">
+    <div class="wrap split-map">
       <div>
         <h2 class="display">Estamos cerca</h2>
         <ul class="contact">
@@ -251,11 +281,10 @@
             <a href="tel:+12244339854">(224) 433-9854</a>
           </li>
         </ul>
-        <p><a class="btn btn-azul" href="https://www.google.com/maps/dir/?api=1&destination=342+Townline+Rd,+Mundelein,+IL+60060">Abrir indicaciones</a></p>
       </div>
       <div class="map">
         <iframe
-          src="https://www.google.com/maps?q=342+Townline+Rd,+Mundelein,+IL+60060&output=embed"
+          src="https://www.google.com/maps?q=342+Townline+Rd,+Mundelein,+IL+60060&amp;output=embed"
           title="Mapa de 342 Townline Rd, Mundelein, IL"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -327,30 +356,81 @@
 </footer>
 
 <script>
-  (function () {
-    var btn = document.querySelector('.nav-toggle');
-    var nav = document.getElementById('nav');
-    if (!btn || !nav) return;
+/* ---------------------------------------------------------- menú móvil --- */
+(function () {
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('nav');
+  if (!btn || !nav) return;
 
-    function close() {
-      btn.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('nav-open');
+  function close() {
+    btn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
+
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    document.body.classList.toggle('nav-open', !open);
+  });
+
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+
+/* ------------------------- cuenta regresiva, en hora de Chicago ---------- */
+(function () {
+  var box = document.getElementById('clock');
+  if (!box) return;
+
+  var SERVICIOS = [[10, 30], [18, 0]];           // domingos
+  var cell = {};
+  ['d', 'h', 'm', 's'].forEach(function (u) { cell[u] = box.querySelector('[data-unit="' + u + '"]'); });
+
+  function chicagoNow() {
+    // una fecha cuyos campos locales equivalen a la hora de Chicago
+    return new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+  }
+
+  function proximo(now) {
+    for (var add = 0; add < 8; add++) {
+      var d = new Date(now);
+      d.setDate(d.getDate() + add);
+      if (d.getDay() !== 0) continue;            // solo domingos
+      for (var i = 0; i < SERVICIOS.length; i++) {
+        var t = new Date(d);
+        t.setHours(SERVICIOS[i][0], SERVICIOS[i][1], 0, 0);
+        if (t - now > 0) return t;
+      }
     }
+    return null;
+  }
 
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-      document.body.classList.toggle('nav-open', !open);
-    });
+  function pad(n) { return n < 10 ? '0' + n : String(n); }
 
-    nav.addEventListener('click', function (e) {
-      if (e.target.closest('a')) close();
-    });
+  function tick() {
+    var now = chicagoNow();
+    var t = proximo(now);
+    if (!t) return;
+    var s = Math.floor((t - now) / 1000);
+    cell.d.textContent = pad(Math.floor(s / 86400));
+    cell.h.textContent = pad(Math.floor(s % 86400 / 3600));
+    cell.m.textContent = pad(Math.floor(s % 3600 / 60));
+    cell.s.textContent = pad(s % 60);
+  }
 
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') close();
-    });
-  })();
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ------------- si una foto de fondo no carga, la banda se adapta --------- */
+(function () {
+  [].forEach.call(document.querySelectorAll('.hero-bg, .feature-bg'), function (img) {
+    function marcar() {
+      if (!img.naturalWidth) img.closest('section').classList.add('sin-foto');
+    }
+    if (img.complete) marcar(); else img.addEventListener('error', marcar);
+  });
+})();
 </script>
 
 </body>
